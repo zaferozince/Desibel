@@ -86,7 +86,7 @@ export default function Footer() {
               <div className="mt-4 space-y-4">
                 {/* Adres */}
                 <div className="flex items-start gap-3">
-                  <MapPin width={48} height={48} />
+                  <MapPin width={40} height={40} />
                   <address className="not-italic text-lg text-slate-300">
                     İnönü Cad. Hüzmen Plaza No:29, D:1, 16040
                     <br /> Osmangazi/Bursa

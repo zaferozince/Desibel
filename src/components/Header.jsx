@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { MapPin,Mail,Phone,Clock,Facebook,Instagram,Twitter,Linkedin} from 'lucide-react';
 import Logo from "../assets/logo.jpg"
 const BlueTopBar = () => (
-  <div className="w-full bg-[#0D6EFD] text-white text-sm">
+  <div className="hidden md:block bg-[#0D6EFD] text-white text-sm">
     <div className="max-w-6xl mx-auto px-4 py-8 h-10 flex items-center justify-between gap-4">
       <div className="flex items-center gap-5">
         <span className="inline-flex items-center gap-2">
@@ -108,6 +108,7 @@ export default function Header() {
               <NavLink href="#hero" onClick={() => setOpen(false)}>ANASAYFA</NavLink>
               <NavLink href="#services" onClick={() => setOpen(false)}>HİZMETLERİMİZ</NavLink>
               <NavLink href="#products" onClick={() => setOpen(false)}>ÜRÜNLER</NavLink>
+              <NavLink href="/blog" onClick={() => setOpen(false)}>BLOG</NavLink>
               <NavLink href="#contact" onClick={() => setOpen(false)}>İLETİŞİM</NavLink>
 
               <a

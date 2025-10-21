@@ -18,7 +18,7 @@ function SlideContent({
   rightImageUrl, // sarı panel görseli
 }) {
   return (
-    <section className="relative isolate overflow-hidden min-h-[72svh] lg:min-h-[100svh] xl:min-h-[100svh]">
+    <section className="relative isolate overflow-hidden min-h-[100svh] lg:min-h-[100svh] xl:min-h-[100svh]">
       {/* SOL MAVİ ZEMİN (ARKA KATMAN) */}
       <div className="absolute inset-0 bg-[#086AD8] z-0" />
 
@@ -54,7 +54,7 @@ function SlideContent({
       )}
 
       {/* İÇERİK (her zaman üste) */}
-      <div className="relative z-[20] mx-auto max-w-7xl px-6 py-20 sm:py-24 lg:py-28 xl:py-32">
+      <div className="relative z-[20] mx-auto max-w-7xl px-6 py-6 md:py-20 sm:py-24 lg:py-28 xl:py-32">
         <div className="grid items-center gap-10 lg:grid-cols-3">
           <motion.div className="lg:col-span-2"
             initial={{ opacity: 0, y: 28 }}
@@ -99,7 +99,7 @@ function SlideContent({
           </motion.div>
 
           {/* Mobilde sağ görsel */}
-          <div className="lg:hidden">
+          {/* <div className="lg:hidden">
             {rightImageUrl && (
               <img
                 src={rightImageUrl}
@@ -108,7 +108,7 @@ function SlideContent({
                 loading="lazy"
               />
             )}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
@@ -133,7 +133,7 @@ export default function HeroSwiperSplitGlass({
         autoplay={autoplay ? { delay: 6000, disableOnInteraction: false } : false}
         speed={800}
         a11y={{ enabled: true }}
-        className="hero-swiper"
+        className="hero-swiper h-[100svh] md:h-[100svh]"
       >
         {slides.map((s, i) => (
           <SwiperSlide key={i}>
