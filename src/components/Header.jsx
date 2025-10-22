@@ -105,11 +105,11 @@ export default function Header() {
         {open && (
           <div className="lg:hidden border-t border-slate-200 bg-white">
             <div className="max-w-6xl mx-auto px-4 py-3 flex flex-col">
-              <NavLink href="#hero" onClick={() => setOpen(false)}>ANASAYFA</NavLink>
-              <NavLink href="#services" onClick={() => setOpen(false)}>HİZMETLERİMİZ</NavLink>
-              <NavLink href="#products" onClick={() => setOpen(false)}>ÜRÜNLER</NavLink>
+              <NavLink href="/#hero" onClick={() => setOpen(false)}>ANASAYFA</NavLink>
+              <NavLink href="/#services" onClick={() => setOpen(false)}>HİZMETLERİMİZ</NavLink>
+              <NavLink href="/#products" onClick={() => setOpen(false)}>ÜRÜNLER</NavLink>
               <NavLink href="/blog" onClick={() => setOpen(false)}>BLOG</NavLink>
-              <NavLink href="#contact" onClick={() => setOpen(false)}>İLETİŞİM</NavLink>
+              <NavLink href="/#contact" onClick={() => setOpen(false)}>İLETİŞİM</NavLink>
 
               <a
                 href="tel:05533138834"
